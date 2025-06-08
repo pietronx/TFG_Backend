@@ -8,7 +8,7 @@ const { exportarPedidosPendientesJSON } = require('./utils/exportJSON'); // Impo
 
 // Definimos la 'app' y el puerto
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Habilitar CORS para todas las rutas
 app.use(cors());
